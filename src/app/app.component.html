@@ -1,0 +1,12 @@
+<button (click)="exportSVG('pdf')">Download PDF</button>
+<button (click)="exportSVG('png')">Download PNG</button>
+<button (click)="exportSVG('jpeg')">Download JPEG</button>
+<br />
+<div id="exportSVGtoPDF" #exportSVGtoPDF style="padding:40px;" >
+  <svg id="render"  #render></svg>
+</div>
+
+<div id="download">
+    <a #downloadLink></a>
+  </div>
+<router-outlet></router-outlet>
